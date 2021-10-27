@@ -11,7 +11,7 @@
     font-size: 18px;
     font-weight: bold;
     background: green;
-    width: 160px;
+    width: 120px;
     padding: 20px;
     text-align: center;
     text-decoration: none;
@@ -29,5 +29,5 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-}
+}  
       
