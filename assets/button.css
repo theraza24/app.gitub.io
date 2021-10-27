@@ -1,58 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* Post Star Rating Widget */
+#wpac-rating:before{content:" ";top:-15px;text-align:center;position:relative;width:100%;}
+#wpac-rating .wp-stars .wp-star:hover:before{z-index:999;padding:3px 11px;background:#1a1d23f0;color:#fff;font-size:12px;border-radius:2px;white-space:nowrap;position:absolute;line-height:1.4;text-align:center;-ms-transform:translateX(-30%);-moz-transform:translateX(-30%);-webkit-transform:translateX(-30%);transform:translateX(-30%);top:100%;margin-top:9px;}
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-body{
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.btn{
-  position: relative;
-  text-align: center;
-  cursor: pointer;
-}
-
-.btn span{
-  position: relative;
-  display: inline-block;
-  color: #fff;
-  font-size: 1.2em;
-  font-weight: 500;
-  text-decoration: none;
-  width: 240px;
-  padding: 18px 0;
-  margin: 35px;
-  border-radius: 8px;
-  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
-  transition: transform 0.15s linear;
-}
-
-.color-01 span{
-  background: linear-gradient(90deg, #EC5C1A, #F6CE61);
-}
-
-.color-02 span{
-  background: linear-gradient(90deg, #0165CD, #55E6FB);
-}
-
-.color-03 span{
-  background: linear-gradient(90deg, #259844, #6FF192);
-}
-
-h1{
-  color: #222;
-  text-align: center;
-  margin-bottom: 50px;
-  font-size: 2.8em;
-  font-weight: 800;
-}
-      
+  
+  .xbutton{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  }
+  
+  .btn{
+    border: none;
+    margin: 20px;
+    padding: 24px;
+    width: 220px;
+    font-family: "montserrat",sans-serif;
+    text-transform: uppercase;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    background-size: 200%;
+    transition: 0.6s;
+  }
+  
+  .btn1{
+    background-image: linear-gradient(to left,#FFC312,#EE5A24,#FFC312);
+  }
+  
+  .btn2{
+    background-image: linear-gradient(to left,#C4E538,#009432,#C4E538);
+  }
+  
+  .btn3{
+    background-image: linear-gradient(to left,#12CBC4,#0652DD,#12CBC4);
+  }
+  
+  .btn4{
+    background-image: linear-gradient(to left,#FDA7DF,#9980FA,#FDA7DF);
+  }
+  
+  .btn:hover{
+    background-position: right;
+  }
+  
